@@ -62,7 +62,7 @@ export default function SignIn() {
             <button className="btn btn-primary w-full mt-5">Sign In</button>
           </div>
           <div className="flex border-t-[2px] border-[rgba(238,238,238,0.8)]">
-            <button className="btn btn-secondary w-full mt-5">
+            <button className="btn btn-outline btn-default w-full mt-5">
               Create an account
             </button>
           </div>

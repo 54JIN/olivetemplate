@@ -9,7 +9,10 @@ export default function Header() {
             <h1>Tab2</h1>
             <h1>Tab3</h1>
           </div>
-          <h1>Tabs</h1>
+          <div className="flex gap-5">
+            <button>Log In</button>
+            <button>Get Started</button>
+          </div>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ export default function Home() {
             the sound of tomorrow. Get early access by joining the waitlist now!
           </p>
           <div className="flex flex-col gap-3 w-full justify-center items-center hidden xl:flex">
-            <div className="flex justify-center items-center bg-[#f5f5f7] gap-2 md:gap-[1vw] pt-1 pb-1 pl-4 pr-1 rounded-md w-full sm:w-[65vw] md:w-[80vw] lg:w-[45vw] xl:w-[30vw] 2xl:w-[30vw] max-w-[432px]">
+            <div className="flex justify-center items-center bg-[#ffffff] gap-2 md:gap-[1vw] pt-1 pb-1 pl-4 pr-1 rounded-md w-full sm:w-[65vw] md:w-[80vw] lg:w-[45vw] xl:w-[30vw] 2xl:w-[30vw] max-w-[432px]">
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -34,7 +34,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col gap-3 w-full sm:w-[60vw] md:w-[45vw] justify-center items-center xl:hidden">
-            <div className="flex justify-center items-center bg-[#f5f5f7] gap-2 md:gap-[1vw] pt-1 pb-1 pl-4 pr-1 rounded-md w-full">
+            <div className="flex justify-center items-center bg-[#ffffff] gap-2 md:gap-[1vw] pt-1 pb-1 pl-4 pr-1 rounded-md w-full">
               <input
                 type="email"
                 placeholder="Enter your email"

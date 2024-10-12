@@ -1,7 +1,9 @@
-// Install Framer Motion
+"use client";
 
 //Libraries
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 //Images
 import featureImg1 from "./Assets/Images/featureImg1.jpg";
@@ -13,19 +15,62 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
 export default function Home() {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+
+  const headerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeInOut" },
+    },
+  };
+
+  const textVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeInOut", delay: 0.3 },
+    },
+  };
+
+  const formVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeInOut", delay: 0.6 },
+    },
+  };
+
   return (
     <div>
       <Header />
       <div className="flex w-full justify-center ">
-        <div className="flex flex-col justify-center items-center pt-[100px] sm:pt-[200px] md:pt-[200px] lg:pt-[200px] xl:pt-[200px] 2xl:pt-[200px]  gap-[9vw] sm:gap-[5vw] md:gap-[2vw] lg:gap-[2vw] xl:gap-[2vw] 2xl:gap-[2vw]">
-          <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl text-center w-[90vw] sm:w-[80vw] md:w-[80vw] lg:w-[80vw] xl:w-[60vw] 2xl:w-[60vw] max-w-[745px]">
+        <motion.div
+          className="flex flex-col justify-center items-center pt-[100px] sm:pt-[200px] md:pt-[200px] lg:pt-[200px] xl:pt-[200px] 2xl:pt-[200px] gap-[9vw] sm:gap-[5vw] md:gap-[2vw] lg:gap-[2vw] xl:gap-[2vw] 2xl:gap-[2vw]"
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          ref={ref}
+        >
+          <motion.h1
+            className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl text-center w-[90vw] sm:w-[80vw] md:w-[80vw] lg:w-[80vw] xl:w-[60vw] 2xl:w-[60vw] max-w-[745px]"
+            variants={headerVariants}
+          >
             Networking platform for producers & singers
-          </h1>
-          <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-center w-[80vw] sm:w-[70vw] md:w-[60vw] lg:w-[45vw] xl:w-[45vw] 2xl:w-[45vw] max-w-[700px]">
+          </motion.h1>
+          <motion.p
+            className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-center w-[80vw] sm:w-[70vw] md:w-[60vw] lg:w-[45vw] xl:w-[45vw] 2xl:w-[45vw] max-w-[700px]"
+            variants={textVariants}
+          >
             Join a community of emerging singers and producers ready to shape
             the sound of tomorrow. Get early access by joining the waitlist now!
-          </p>
-          <div className="flex flex-col gap-3 w-full justify-center items-center hidden xl:flex">
+          </motion.p>
+          <motion.div
+            variants={formVariants}
+            className="flex flex-col gap-3 w-full justify-center items-center hidden xl:flex"
+          >
             <div className="flex justify-center items-center bg-[#ffffff] gap-2 md:gap-[1vw] pt-1 pb-1 pl-4 pr-1 rounded-md w-full sm:w-[65vw] md:w-[80vw] lg:w-[45vw] xl:w-[30vw] 2xl:w-[30vw] max-w-[432px]">
               <input
                 type="email"
@@ -34,8 +79,11 @@ export default function Home() {
               />
               <button className="btn btn-primary">Join Waitlist</button>
             </div>
-          </div>
-          <div className="flex flex-col gap-3 w-full sm:w-[60vw] md:w-[45vw] justify-center items-center xl:hidden">
+          </motion.div>
+          <motion.div
+            variants={formVariants}
+            className="flex flex-col gap-3 w-full sm:w-[60vw] md:w-[45vw] justify-center items-center xl:hidden"
+          >
             <div className="flex justify-center items-center bg-[#ffffff] gap-2 md:gap-[1vw] pt-1 pb-1 pl-4 pr-1 rounded-md w-full">
               <input
                 type="email"
@@ -46,8 +94,8 @@ export default function Home() {
             <button className="btn btn-primary w-full h-[6vh] sm:h-[50px] md:h-[50px]">
               Join Waitlist
             </button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-4 pt-10">
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">

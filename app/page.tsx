@@ -1,3 +1,5 @@
+// Install Framer Motion
+
 //Libraries
 import Image from "next/image";
 
@@ -65,6 +67,77 @@ export default function Home() {
           alt="Feature 3"
           className="w-[90vw] sm:w-[90vw] md:w-[40vw] lg:w-[25vw] xl:w-[20vw] 2xl:w-[20vw] border-[9px] border-[rgba(238,238,238,0.8)] rounded-lg"
         />
+      </div>
+      <div className="flex justify-center bg-[#ffffff] pt-20 pb-20">
+        <div className="flex flex-col w-[90%] max-w-[1200px] gap-10 sm:gap-10 md:gap-10 lg:gap-20 xl:gap-20 2xl:gap-20">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl md:pr-[10vw] lg:pr-[20vw] xl:pr-[20vw] 2xl:pr-[20vw]">
+            Greet, meet, and connect with your favorite singers and producers
+          </h2>
+          <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-0">
+            <div className="flex w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl"></div>
+            <div className="flex flex-col lg:justify-center lg:p-10 xl:p-20 2xl:p-20 gap-5 lg:w-[45vw]">
+              <h4 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
+                Title One
+              </h4>
+              <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#5D5D5D]">
+                BLah blah blah BLah blah blah BLah blah blah BLah blah blah BLah
+                blah blah BLah blah blah BLah blah blah BLah blah blah BLah blah
+                blah BLah blah blah BLah blah blah BLah blah blah BLah blah blah
+                BLah blah blah BLah blah blah BLah blah blah BLah blah blah BLah
+                blah blah BLah blah blah BLah blah blah BLah blah blah BLah blah
+                blah BLah blah blah BLah blah blah
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-10 lg:flex-row-reverse lg:justify-between lg:gap-0">
+            <div className="flex w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl"></div>
+            <div className="flex flex-col lg:justify-center lg:pt-10 lg:pb-10 lg:pr-10 xl:pt-20 xl:pb-20 xl:pr-20 2xl:pt-20 2xl:pb-20 2xl:pr-20 gap-5 lg:w-[45vw]">
+              <h4 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
+                Title One
+              </h4>
+              <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#5D5D5D]">
+                BLah blah blah BLah blah blah BLah blah blah BLah blah blah BLah
+                blah blah BLah blah blah BLah blah blah BLah blah blah BLah blah
+                blah BLah blah blah BLah blah blah BLah blah blah BLah blah blah
+                BLah blah blah BLah blah blah BLah blah blah BLah blah blah BLah
+                blah blah BLah blah blah BLah blah blah BLah blah blah BLah blah
+                blah BLah blah blah BLah blah blah
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-0">
+            <div className="flex w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl"></div>
+            <div className="flex flex-col lg:justify-center lg:p-10 xl:p-20 2xl:p-20 gap-5 lg:w-[45vw]">
+              <h4 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
+                Title One
+              </h4>
+              <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#5D5D5D]">
+                BLah blah blah BLah blah blah BLah blah blah BLah blah blah BLah
+                blah blah BLah blah blah BLah blah blah BLah blah blah BLah blah
+                blah BLah blah blah BLah blah blah BLah blah blah BLah blah blah
+                BLah blah blah BLah blah blah BLah blah blah BLah blah blah BLah
+                blah blah BLah blah blah BLah blah blah BLah blah blah BLah blah
+                blah BLah blah blah BLah blah blah
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-10 lg:flex-row-reverse lg:justify-between lg:gap-0">
+            <div className="flex w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl"></div>
+            <div className="flex flex-col lg:justify-center lg:pt-10 lg:pb-10 lg:pr-10 xl:pt-20 xl:pb-20 xl:pr-20 2xl:pt-20 2xl:pb-20 2xl:pr-20 gap-5 lg:w-[45vw]">
+              <h4 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
+                Title One
+              </h4>
+              <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#5D5D5D]">
+                BLah blah blah BLah blah blah BLah blah blah BLah blah blah BLah
+                blah blah BLah blah blah BLah blah blah BLah blah blah BLah blah
+                blah BLah blah blah BLah blah blah BLah blah blah BLah blah blah
+                BLah blah blah BLah blah blah BLah blah blah BLah blah blah BLah
+                blah blah BLah blah blah BLah blah blah BLah blah blah BLah blah
+                blah BLah blah blah BLah blah blah
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

@@ -146,8 +146,8 @@ export default function Home() {
                 You need to identify pre-existing medical conditions.
               </h4>
               <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#5D5D5D]">
-                You can't miss a pre-existing medical condition that may affect
-                the value of your client's claim. Our AI will flag all medical
+                You can&#39;t miss a pre-existing medical condition that may affect
+                the value of your client&#39;s claim. Our AI will flag all medical
                 events preceding the injury that may affect the value of your
                 claim.
               </p>
@@ -176,7 +176,7 @@ export default function Home() {
                 You need organization.
               </h4>
               <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#5D5D5D]">
-                Don't get lost in a jumble of medical records. Our user-friendly
+                Don&#39;t get lost in a jumble of medical records. Our user-friendly
                 AI catalogs your files in a clean chronology. Find exactly what
                 you need when you need it.
               </p>
